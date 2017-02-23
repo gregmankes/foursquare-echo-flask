@@ -10,7 +10,11 @@ from geopy import Nominatim
 from random import choice
 
 class Location():
+    """Location
 
+    A geographic location. Gets the latitude and longitude
+    from a location passed to constructor
+    """
     def __init__(self, location):
         geoloc = Nominatim()
         loc = geoloc.geocode(location)
